@@ -19,14 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const createPlayerListItem = function (form) {
     const playerListItem = document.createElement('li');
     playerListItem.classList.add('playing-list-item');
-    
-    // const first = document.createElement('h2');
-    // first.textContent = form.first.value;
-    // playerListItem.appendChild(first);
-  
-    // const last = document.createElement('h2');
-    // last.textContent = form.last.value;
-    // playerListItem.appendChild(last);
 
     const fullName = document.createElement('h2');
     fullName.textContent = `${form.first.value} ${form.last.value}`;
@@ -40,9 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
     country.textContent = form.country.value;
     playerListItem.appendChild(country);
     
-  
 
-    // console.log(form.stillPlaying.value);
   
     return playerListItem;
   }
